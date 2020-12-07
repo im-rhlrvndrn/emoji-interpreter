@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #eee;
+    box-sizing: box-sizing;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.mainApp {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 36, 41);
+}
+
+input {
+    margin-top: 2rem;
+    width: 50%;
+    height: 45px;
+    padding: 0 1rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: rgb(36, 40, 49);
+    transition: 0.4s ease-in-out;
+}
+
+input::placeholder {
+    color: #eee;
+}
+
+input:focus {
+    outline: none;
+    /* border: 1px solid rgb(116, 117, 119); */
+    box-shadow: 0 0 4px 0 rgb(96, 165, 250);
+}
+
+.emojiMeaning {
+    font-weight: 800;
+    margin-top: 2rem;
+}
+
+.emojiContainer {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.emojiContainer > .emoji {
+    padding: 0 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 700px) {
+    input {
+        width: 70%;
+    }
+
+    .emojiContainer > .emoji {
+        padding: 0 1.2rem 0 0;
+        font-size: 1.2rem;
+        border-radius: 50%;
+    }
+}
