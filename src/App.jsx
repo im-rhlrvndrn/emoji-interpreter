@@ -35,7 +35,7 @@ const App = () => {
                 type='text'
                 name='emojiInput'
                 id='emojiInput'
-                placeholder='Search for an emojis meaning'
+                placeholder='Paste an emoji to know its meaning'
             />
             {meaning !== '' && <p className='emojiMeaning'>{meaning}</p>}
             <div className='emojiContainer'>
