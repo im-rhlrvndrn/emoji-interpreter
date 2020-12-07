@@ -14,11 +14,10 @@ let emojis = {
 
 const App = () => {
     const [meaning, setMeaning] = useState('');
-    const emojisList = Object.keys(emojis);
+    const emojisKeysList = Object.keys(emojis);
 
     const emojiInputHandler = (event) => {
         const meaning = emojis[event.target.value];
-        // if (!meaning && (event.target.value = '')) return setMeaning('');
         setMeaning(meaning);
     };
 
@@ -39,7 +38,7 @@ const App = () => {
             />
             {meaning !== '' && <p className='emojiMeaning'>{meaning}</p>}
             <div className='emojiContainer'>
-                {emojisList.map((item) => {
+                {emojisKeysList.map((item) => {
                     return (
                         <div key={item} className='emoji' onClick={() => emojiHandler(item)}>
                             {item}
