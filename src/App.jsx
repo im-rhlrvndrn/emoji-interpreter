@@ -10,6 +10,32 @@ let emojis = {
     '🦥': 'Sloth',
     '🐨': 'Koala',
     '🦙': 'Llama',
+    '🙈': 'See-No-Evil Monkey',
+    '🙉': 'Hear-No-Evil Monkey',
+    '🙊': 'Speak-No-Evil Monkey',
+    '🦍': 'Gorilla',
+    '🐕': 'Dog',
+    '🦊': 'Fox',
+    '🦝': 'Raccoon',
+    '🦌': 'Deer',
+    '🐂': 'Ox',
+    '🐷': 'Pig Face',
+    '🐐': 'Goat',
+    '🐪': 'Camel',
+    '🐿️': 'Chipmunk',
+    '🦔': 'Hedgehog',
+    '🦩': 'Flamingo',
+    '🐢': 'Turtle',
+    '🐊': 'Crocodile',
+    '🦅': 'Eagle',
+    '🐓': 'Rooster',
+    '🐧': 'Penguin',
+    '🦢': 'Swan',
+    '🦉': 'Owl',
+    '🦃': 'Turkey',
+    '🐼': 'Panda',
+    '🦇': 'Bat',
+    '🐇': 'Rabbit',
 };
 
 const App = () => {
@@ -49,25 +75,5 @@ const App = () => {
         </div>
     );
 };
-
-// const App = () => {
-//   const emojiDictionary = {
-
-//   }
-
-//     const emojiInputHandler = (event) => {
-//       event.preventDefault();
-
-//     };
-
-//     return (
-//         <div className='mainApp'>
-//             <h1>Emoji Interpreter</h1>
-//             <input onChange={emojiInputHandler} type='text' name='emojiInput' id='emojiInput' />
-//             <p className='emojiMeaning'></p>
-//             <div className='emojiContainer'></div>
-//         </div>
-//     );
-// };
 
 export default App;
